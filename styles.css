@@ -87,7 +87,7 @@ figure,.element-card,.editorial-detail{break-inside:avoid}
 }
 /* Hide the cropped lettering baked into the supplied cover illustration. */
 .hero-visual{overflow:hidden;border-radius:16px}
-.hero-visual img{width:123.46%;max-width:none;margin-left:-23.46%;height:auto}
+.hero-visual img{width:108%;max-width:none;margin-left:-4%;height:auto}
 .conclusion-grid img{width:min(100%,340px);height:auto;max-height:none;justify-self:center}
 @media(max-width:800px){.conclusion-grid img{width:min(100%,240px);max-height:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
