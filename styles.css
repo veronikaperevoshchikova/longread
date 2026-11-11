@@ -91,3 +91,21 @@ figure,.element-card,.editorial-detail{break-inside:avoid}
 .conclusion-grid img{width:min(100%,340px);height:auto;max-height:none;justify-self:center}
 @media(max-width:800px){.conclusion-grid img{width:min(100%,240px);max-height:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.anatomy .body-copy:has(+ .note){margin-bottom:0}
+.anatomy .note{margin-block:20px}
+.scale-image-crop{
+  position:relative;
+  aspect-ratio:353 / 110;
+  overflow:hidden;
+  border-radius:14px;
+}
+.scale-image-crop img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:110%;
+  max-width:none;
+  height:auto;
+  transform:translate(-50%,-50%);
+}
