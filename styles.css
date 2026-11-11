@@ -94,18 +94,39 @@ figure,.element-card,.editorial-detail{break-inside:avoid}
 
 .anatomy .body-copy:has(+ .note){margin-bottom:0}
 .anatomy .note{margin-block:20px}
-.scale-image-crop{
-  position:relative;
-  aspect-ratio:353 / 110;
-  overflow:hidden;
-  border-radius:14px;
+
+.button-examples{padding:24px}
+.button-examples-group + .button-examples-group{
+  margin-top:20px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
 }
-.scale-image-crop img{
-  position:absolute;
-  top:50%;
-  left:50%;
-  width:110%;
-  max-width:none;
-  height:auto;
-  transform:translate(-50%,-50%);
+.button-examples h3{margin:0 0 14px;font-size:16px}
+.button-examples-list{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:end;
+  gap:16px 12px;
+  list-style:none;
+  margin:0;
+  padding:0;
 }
+.button-examples-list li{display:grid;justify-items:start;gap:6px}
+.button-examples-list small{font-size:12px;color:#596276}
+.button-sample{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:40px;
+  padding:0 16px;
+  border:1px solid transparent;
+  border-radius:10px;
+  background:#2859c5;
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+}
+.button-sample-small{min-height:32px;padding-inline:12px;font-size:12px}
+.button-sample-large{min-height:48px;padding-inline:20px;font-size:16px}
+.button-sample-secondary{background:#e7edfc;color:#233c79;border-color:#cdd9f6}
+.button-sample-danger{background:#b4233a}
