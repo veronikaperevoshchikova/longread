@@ -143,7 +143,7 @@ figure,.element-card,.editorial-detail{break-inside:avoid}
 
 .quote{grid-template-columns:70px minmax(0,1fr) 70px}
 .quote > .quote-mark{grid-row:1;align-self:center}
-.quote-mark-end{grid-column:3;justify-self:end}
+.quote-mark-end{grid-column:3;justify-self:end;transform:scaleX(-1)}
 @media(max-width:800px){.quote{grid-template-columns:40px minmax(0,1fr) 40px}}
 @media(max-width:480px){
   .quote{grid-template-columns:24px minmax(0,1fr) 24px}
