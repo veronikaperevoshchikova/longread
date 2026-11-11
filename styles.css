@@ -95,38 +95,55 @@ figure,.element-card,.editorial-detail{break-inside:avoid}
 .anatomy .body-copy:has(+ .note){margin-bottom:0}
 .anatomy .note{margin-block:20px}
 
-.button-examples{padding:24px}
-.button-examples-group + .button-examples-group{
-  margin-top:20px;
-  padding-top:20px;
-  border-top:1px solid var(--line);
+.button-examples{padding:clamp(14px, 2vw, 24px)}
+.scale-visual .button-kit-heading{
+  padding:0 0 16px;
+  border-bottom:1px solid var(--line);
+  color:var(--ink);
+  font-size:17px;
+  font-weight:800;
 }
-.button-examples h3{margin:0 0 14px;font-size:16px}
+.button-examples-group{padding-top:16px}
+.button-examples-group + .button-examples-group{margin-top:4px}
+.button-examples h3{margin:0 0 10px;font-size:13px}
 .button-examples-list{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:end;
-  gap:16px 12px;
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:6px;
   list-style:none;
   margin:0;
   padding:0;
 }
-.button-examples-list li{display:grid;justify-items:start;gap:6px}
-.button-examples-list small{font-size:12px;color:#596276}
+.button-examples-list li{
+  display:grid;
+  grid-template-rows:48px auto;
+  align-items:center;
+  justify-items:center;
+  gap:8px;
+  padding:10px 2px 8px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#f6f7fb;
+}
+.button-examples-list small{font-size:11px;color:#596276;text-align:center}
 .button-sample{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   min-height:40px;
-  padding:0 16px;
+  padding-inline:10px;
   border:1px solid transparent;
   border-radius:10px;
   background:#2859c5;
   color:#fff;
-  font-size:14px;
-  font-weight:700;
+  font-size:13px;
+  font-weight:800;
+  line-height:1;
+  box-shadow:0 3px 8px #2859c526;
 }
-.button-sample-small{min-height:32px;padding-inline:12px;font-size:12px}
-.button-sample-large{min-height:48px;padding-inline:20px;font-size:16px}
-.button-sample-secondary{background:#e7edfc;color:#233c79;border-color:#cdd9f6}
-.button-sample-danger{background:#b4233a}
+.button-sample-small{min-height:32px;padding-inline:8px;font-size:12px}
+.button-sample-large{min-height:48px;padding-inline:11px;font-size:14px}
+.button-sample-soft{background:var(--blue-soft);color:#25468f;box-shadow:none}
+.button-sample-outline{background:#fff;color:#25468f;border-color:#879fdb;box-shadow:none}
+.button-sample-focus{box-shadow:0 0 0 2px #fff,0 0 0 4px #477cf0}
+.button-sample-disabled{background:#e6e9f1;color:#606b80;box-shadow:none}
