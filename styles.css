@@ -140,3 +140,11 @@ figure,.element-card,.editorial-detail{break-inside:avoid}
 .button-sample-outline{background:#fff;color:#25468f;border-color:#879fdb;box-shadow:none}
 .button-sample-focus{box-shadow:0 0 0 2px #fff,0 0 0 4px #477cf0}
 .button-sample-disabled{background:#e6e9f1;color:#606b80;box-shadow:none}
+
+.quote{grid-template-columns:70px minmax(0,1fr) 70px}
+.quote-mark-end{grid-column:3;grid-row:1;align-self:end;justify-self:end}
+@media(max-width:800px){.quote{grid-template-columns:40px minmax(0,1fr) 40px}}
+@media(max-width:480px){
+  .quote{grid-template-columns:24px minmax(0,1fr) 24px}
+  .quote-mark-end{font-size:40px}
+}
